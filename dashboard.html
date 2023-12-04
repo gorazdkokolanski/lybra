@@ -1,0 +1,1824 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lybra | Unleash the Utility of LST in DeFi</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/imgfavicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="header-container container">
+
+            <div class="leftHeader">
+                <a href="dashboard.html">
+                    <img src="img/logo.png">
+
+                    <div>Lybra Finance</div>
+                </a>
+
+                <a href="eusd.html">eUSD</a>
+                <a href="peusd.html">peUSD</a>
+                <a href="https://docs.lybra.finance/lybra-finance-docs-v2/background/introduction"
+                    target="_blank">Docs</a>
+                <div class="governance">
+                    <div>
+                        <div>Governance</div>
+                        <img src="img/downarrow.svg">
+                    </div>
+                    <div class="governance-expansion">
+                        <a href="https://forum.lybra.finance/" target="_blank">Forum</a>
+                        <a href="https://snapshot.org/#/lybralabs.eth" target="_blank">Snapshot</a>
+                        <a href="https://www.tally.xyz/gov/lybra-dao" target="_blank">Tally</a>
+                    </div>
+                </div>
+                <a href="v1.html">Lybra V1</a>
+            </div>
+
+            <div class="rightHeader">
+                <div class="thesun">
+                    <img src="img/sun.svg" alt="">
+                </div>
+
+                <a href="dashboard.html">Connect Wallet</a>
+            </div>
+
+            <div class="burger">
+                <img src="img/burger.svg">
+            </div>
+
+
+
+        </div>
+
+        <div class="mobile-menu thismobile">
+            <div style="display: flex; flex-direction: column; width: 100%; justify-content: center;">
+                <div id="iddto" style="display: flex; width: 100%;
+                justify-content: space-between; align-items: center;">
+                    <div>DASHBOARD</div>
+                    <img style="transform: rotate(-90deg);" src="img/downarrow.svg">
+                </div>
+                <div class="sidebarr">
+                    <div class="mobileScreens">
+                        <img src="img/side1.svg">
+                        <div>Vault</div>
+                    </div>
+                    <div class="mobileScreens">
+                        <img src="img/side2.svg">
+                        <div>Deposit</div>
+                    </div>
+                    <div class="mobileScreens">
+                        <img src="img/side3.svg">
+                        <div>Withdraw</div>
+                    </div>
+                    <div class="mobileScreens">
+                        <img src="img/side4.svg">
+                        <div>Repay</div>
+                    </div>
+                    <div class="mobileScreens">
+                        <img src="img/side5.svg">
+                        <div>Redeem</div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobileScreens">OMNICHAIN</div>
+            <div class="mobileScreens">BOOST</div>
+            <div class="mobileScreens">EARN</div>
+            <div class="mobileScreens">VEST</div>
+            <div class="mobileScreens">BOUNTY</div>
+            <div></div>
+        </div>
+
+    </header>
+
+    <section id="dashboard">
+
+        <div class="dashboard-container container">
+
+            <div class="sidebar">
+                <div style="margin-bottom: 5px;">DASHBOARD</div>
+                <div class="clickable-side selected-side">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.1562 1.0625H4.84375C2.40542 1.0625 1.0625 2.40542 1.0625 4.84375V15.1562C1.0625 17.5946 2.40542 18.9375 4.84375 18.9375H15.1562C17.5946 18.9375 18.9375 17.5946 18.9375 15.1562V4.84375C18.9375 2.40542 17.5946 1.0625 15.1562 1.0625ZM17.5625 15.1562C17.5625 16.8429 16.8429 17.5625 15.1562 17.5625H4.84375C3.15708 17.5625 2.4375 16.8429 2.4375 15.1562V4.84375C2.4375 3.15708 3.15708 2.4375 4.84375 2.4375H15.1562C16.8429 2.4375 17.5625 3.15708 17.5625 4.84375V15.1562ZM10 6.5625C8.86333 6.5625 7.9375 7.48742 7.9375 8.625C7.9375 9.51967 8.51408 10.276 9.3125 10.5611V13.6667C9.3125 14.0462 9.6205 14.3542 10 14.3542C10.3795 14.3542 10.6875 14.0462 10.6875 13.6667V10.5611C11.4859 10.276 12.0625 9.52058 12.0625 8.625C12.0625 7.48742 11.1367 6.5625 10 6.5625ZM10 9.3125C9.62142 9.3125 9.3125 9.0045 9.3125 8.625C9.3125 8.2455 9.62142 7.9375 10 7.9375C10.3786 7.9375 10.6875 8.2455 10.6875 8.625C10.6875 9.0045 10.3786 9.3125 10 9.3125Z"
+                            fill="#171717" />
+                    </svg>
+                    <div>Vault</div>
+                </div>
+                <div class="clickable-side">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7.91669 11.4583C7.91669 12.2667 8.5417 12.9167 9.30836 12.9167H10.875C11.5417 12.9167 12.0834 12.35 12.0834 11.6417C12.0834 10.8833 11.75 10.6083 11.2584 10.4333L8.75002 9.55833C8.25835 9.38333 7.92503 9.11667 7.92503 8.35C7.92503 7.65 8.46668 7.075 9.13335 7.075H10.7C11.4667 7.075 12.0917 7.725 12.0917 8.53334"
+                            stroke="#292D32" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M10 6.25V13.75" stroke="#292D32" stroke-width="1.25" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path
+                            d="M18.3334 10C18.3334 14.6 14.6 18.3333 10 18.3333C5.40002 18.3333 1.66669 14.6 1.66669 10C1.66669 5.4 5.40002 1.66667 10 1.66667"
+                            stroke="#292D32" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M14.1667 2.5V5.83333H17.5" stroke="#292D32" stroke-width="1.25" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M18.3334 1.66667L14.1667 5.83333" stroke="#292D32" stroke-width="1.25"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                    <div>Deposit</div>
+                </div>
+                <div class="clickable-side">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7.91669 11.4583C7.91669 12.2667 8.5417 12.9167 9.30836 12.9167H10.875C11.5417 12.9167 12.0834 12.35 12.0834 11.6417C12.0834 10.8833 11.75 10.6083 11.2584 10.4333L8.75002 9.55833C8.25835 9.38333 7.92503 9.11667 7.92503 8.35C7.92503 7.65 8.46668 7.075 9.13335 7.075H10.7C11.4667 7.075 12.0917 7.725 12.0917 8.53334"
+                            stroke="#292D32" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M10 6.25V13.75" stroke="#292D32" stroke-width="1.25" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path
+                            d="M18.3334 10C18.3334 14.6 14.6 18.3333 10 18.3333C5.40002 18.3333 1.66669 14.6 1.66669 10C1.66669 5.4 5.40002 1.66666 10 1.66666"
+                            stroke="#292D32" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M18.3333 5V1.66666H15" stroke="#292D32" stroke-width="1.25" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M14.1667 5.83333L18.3334 1.66666" stroke="#292D32" stroke-width="1.25"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                    <div>Withdraw</div>
+                </div>
+                <div class="clickable-side">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.66669 14.2167H10" stroke="#292D32" stroke-width="1.25" stroke-miterlimit="10"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M3.51666 11.25H8.15004C9.63338 11.25 10 11.6167 10 13.0833V16.5083C10 17.975 9.63338 18.3417 8.15004 18.3417H3.51666C2.03333 18.3417 1.66669 17.975 1.66669 16.5083V13.0833C1.66669 11.6167 2.03333 11.25 3.51666 11.25Z"
+                            stroke="#292D32" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M18.3333 12.5C18.3333 15.725 15.725 18.3333 12.5 18.3333L13.375 16.875"
+                            stroke="#292D32" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M1.66669 7.5C1.66669 4.27501 4.27502 1.66667 7.50002 1.66667L6.62503 3.12501"
+                            stroke="#292D32" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M15.4167 9.16667C17.4878 9.16667 19.1667 7.48774 19.1667 5.41667C19.1667 3.3456 17.4878 1.66667 15.4167 1.66667C13.3456 1.66667 11.6667 3.3456 11.6667 5.41667C11.6667 7.48774 13.3456 9.16667 15.4167 9.16667Z"
+                            stroke="#292D32" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                    <div>Repay</div>
+                </div>
+                <div class="clickable-side">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2.08331 11.0333V9.59167C2.08331 7.86667 3.49164 6.45833 5.21664 6.45833H14.7833C16.5083 6.45833 17.9166 7.86667 17.9166 9.59167V10.7917H16.2333C15.7666 10.7917 15.3416 10.975 15.0333 11.2917C14.6833 11.6333 14.4833 12.125 14.5333 12.65C14.6083 13.55 15.4333 14.2083 16.3333 14.2083H17.9166V15.2C17.9166 16.925 16.5083 18.3333 14.7833 18.3333H10.2166"
+                            stroke="#292D32" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M2.08331 10.3417V6.53337C2.08331 5.54171 2.69164 4.65834 3.61664 4.30834L10.2333 1.80834C11.2666 1.41667 12.375 2.18336 12.375 3.2917V6.45835"
+                            stroke="#292D32" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M18.799 11.6418V13.3585C18.799 13.8168 18.4323 14.1918 17.9657 14.2085H16.3323C15.4323 14.2085 14.6073 13.5501 14.5323 12.6501C14.4823 12.1251 14.6823 11.6335 15.0323 11.2918C15.3406 10.9751 15.7657 10.7918 16.2323 10.7918H17.9657C18.4323 10.8085 18.799 11.1835 18.799 11.6418Z"
+                            stroke="#292D32" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M5.83331 10H11.6666" stroke="#292D32" stroke-width="1.25" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M2.5 13.75H6.95C7.48333 13.75 7.91667 14.1833 7.91667 14.7166V15.7833" stroke="#292D32"
+                            stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M3.51667 12.7334L2.5 13.75L3.51667 14.7666" stroke="#292D32" stroke-width="1.25"
+                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M7.91667 18.15H3.46667C2.93334 18.15 2.5 17.7167 2.5 17.1833V16.1167" stroke="#292D32"
+                            stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M6.90106 19.1669L7.91773 18.1503L6.90106 17.1336" stroke="#292D32" stroke-width="1.25"
+                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                    <div>Redeem</div>
+                </div>
+                <div class="sideline"></div>
+                <div class="clickable-side">
+                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_2043_8179)">
+                            <circle cx="10.0001" cy="8.99999" r="8.24992" stroke="black" stroke-width="1.5" />
+                            <path
+                                d="M15.2619 0.744626C16.2591 0.73439 17.2562 0.73439 18.2534 0.73439V3.73607C17.4746 2.54214 16.4559 1.52338 15.2619 0.744626ZM18.2534 14.2645V17.2843H15.2619C16.4596 16.4984 17.4788 15.4696 18.2534 14.2645ZM4.7389 0.747637C3.53818 1.51877 2.51353 2.53439 1.7318 3.72824V0.753056C1.79562 0.731981 4.52935 0.725358 4.7389 0.747637ZM4.72565 17.2668H1.75046C1.72939 17.197 1.72397 14.388 1.74504 14.2645C2.51797 15.4625 3.53332 16.4852 4.72565 17.2668Z"
+                                fill="black" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_2043_8179">
+                                <rect width="20" height="17.9998" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+                    <div>Omnichain</div>
+                </div>
+                <div style="margin-top: 20px; margin-bottom: 5px;">EARN</div>
+                <div class="clickable-side">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M5.44426 10.987H7.82693V16.5388C7.82693 17.3562 8.84476 17.7417 9.38452 17.1249L15.2217 10.4935C15.7306 9.91518 15.3219 9.013 14.5508 9.013H12.1682V3.46115C12.1682 2.6438 11.1503 2.25825 10.6106 2.87512L4.77342 9.5065C4.27221 10.0848 4.68088 10.987 5.44426 10.987Z"
+                            stroke="#171717" stroke-width="1.15664" stroke-miterlimit="10" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+
+                    <div>Boost</div>
+                </div>
+                <div class="clickable-side">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.4166 10.5417V13.625C15.4166 16.225 12.9916 18.3333 9.99998 18.3333C7.00831 18.3333 4.58331 16.225 4.58331 13.625V10.5417C4.58331 13.1417 7.00831 15 9.99998 15C12.9916 15 15.4166 13.1417 15.4166 10.5417Z"
+                            stroke="#292D32" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M15.4166 6.375C15.4166 7.13334 15.2083 7.83333 14.8416 8.43333C13.95 9.9 12.1166 10.8333 9.99998 10.8333C7.88331 10.8333 6.04998 9.9 5.15832 8.43333C4.79165 7.83333 4.58331 7.13334 4.58331 6.375C4.58331 5.075 5.19164 3.9 6.16664 3.05C7.14997 2.19167 8.49998 1.66667 9.99998 1.66667C11.5 1.66667 12.85 2.19167 13.8333 3.04167C14.8083 3.9 15.4166 5.075 15.4166 6.375Z"
+                            stroke="#292D32" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M15.4166 6.375V10.5417C15.4166 13.1417 12.9916 15 9.99998 15C7.00831 15 4.58331 13.1417 4.58331 10.5417V6.375C4.58331 3.775 7.00831 1.66667 9.99998 1.66667C11.5 1.66667 12.85 2.19167 13.8333 3.04167C14.8083 3.9 15.4166 5.075 15.4166 6.375Z"
+                            stroke="#292D32" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <div>Earn</div>
+                </div>
+                <div class="clickable-side">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M17.425 9.26666C17.425 13.3417 14.4666 17.1583 10.425 18.275C10.15 18.35 9.84995 18.35 9.57495 18.275C5.53328 17.1583 2.57495 13.3417 2.57495 9.26666V5.60832C2.57495 4.92498 3.09163 4.14998 3.7333 3.89165L8.37494 1.99168C9.41661 1.56668 10.5916 1.56668 11.6333 1.99168L16.275 3.89165C16.9083 4.14998 17.4333 4.92498 17.4333 5.60832L17.425 9.26666Z"
+                            stroke="#171717" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M9.99998 10.4167C10.9205 10.4167 11.6666 9.67047 11.6666 8.74999C11.6666 7.82952 10.9205 7.08333 9.99998 7.08333C9.07951 7.08333 8.33331 7.82952 8.33331 8.74999C8.33331 9.67047 9.07951 10.4167 9.99998 10.4167Z"
+                            stroke="#171717" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M10 10.4167V12.9167" stroke="#171717" stroke-width="1.25" stroke-miterlimit="10"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                    <div>Vest</div>
+                </div>
+                <div class="clickable-side">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16.6416 8.33334H3.30829V15C3.30829 17.5 4.14162 18.3333 6.64162 18.3333H13.3083C15.8083 18.3333 16.6416 17.5 16.6416 15V8.33334Z"
+                            stroke="#292D32" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path
+                            d="M17.9166 5.83333V6.66666C17.9166 7.58333 17.475 8.33333 16.25 8.33333H3.74998C2.47498 8.33333 2.08331 7.58333 2.08331 6.66666V5.83333C2.08331 4.91666 2.47498 4.16666 3.74998 4.16666H16.25C17.475 4.16666 17.9166 4.91666 17.9166 5.83333Z"
+                            stroke="#292D32" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path
+                            d="M9.70004 4.16667H5.10004C4.81671 3.85834 4.82504 3.38334 5.12504 3.08334L6.30838 1.9C6.61671 1.59167 7.12504 1.59167 7.43338 1.9L9.70004 4.16667Z"
+                            stroke="#292D32" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path
+                            d="M14.8916 4.16667H10.2916L12.5583 1.9C12.8666 1.59167 13.375 1.59167 13.6833 1.9L14.8666 3.08334C15.1666 3.38334 15.175 3.85834 14.8916 4.16667Z"
+                            stroke="#292D32" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path
+                            d="M7.45001 8.33334V12.6167C7.45001 13.2833 8.18335 13.675 8.74168 13.3167L9.52501 12.8C9.80835 12.6167 10.1667 12.6167 10.4417 12.8L11.1833 13.3C11.7333 13.6667 12.475 13.275 12.475 12.6083V8.33334H7.45001Z"
+                            stroke="#292D32" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    <div>Bounty</div>
+                </div>
+            </div>
+
+            <div class="vaults screen">
+
+                <div class="boxes-cont">
+                    <div class="vaultBox">
+                        <div class="vaultTop">
+                            <img src="img/vault1.svg">
+                            <div>stETH</div>
+                        </div>
+                        <div class="vaultMid">
+                            <div>
+                                <div>Total Value Locked</div>
+                                <div>$239.776M</div>
+                            </div>
+                            <div>
+                                <div>Minted eUSD</div>
+                                <div>115.426M</div>
+                            </div>
+                            <div>
+                                <div>APR</div>
+                                <div>17.06%</div>
+                            </div>
+                        </div>
+                        <div class="vaultBottom">
+                            <div class="deposit-btn">Deposit</div>
+                        </div>
+                    </div>
+
+                    <div class="vaultBox">
+                        <div class="vaultTop">
+                            <img src="img/vault2.svg">
+                            <div>wstETH</div>
+                        </div>
+                        <div class="vaultMid">
+                            <div>
+                                <div>Total Value Locked</div>
+                                <div>$69.634M</div>
+                            </div>
+                            <div>
+                                <div>Minted eUSD</div>
+                                <div>31.687M</div>
+                            </div>
+                            <div>
+                                <div>APR</div>
+                                <div>20.24%</div>
+                            </div>
+                        </div>
+                        <div class="vaultBottom">
+                            <div class="deposit-btn">Deposit</div>
+                        </div>
+                    </div>
+
+                    <div class="vaultBox">
+                        <div class="vaultTop">
+                            <img src="img/vault3.svg">
+                            <div>WBETH</div>
+                        </div>
+                        <div class="vaultMid">
+                            <div>
+                                <div>Total Value Locked</div>
+                                <div>$4.349M</div>
+                            </div>
+                            <div>
+                                <div>Minted eUSD</div>
+                                <div>1.795M</div>
+                            </div>
+                            <div>
+                                <div>APR</div>
+                                <div>18.12%</div>
+                            </div>
+                        </div>
+                        <div class="vaultBottom">
+                            <div class="deposit-btn">Deposit</div>
+                        </div>
+                    </div>
+
+                    <div class="vaultBox">
+                        <div class="vaultTop">
+                            <img src="img/vault4.svg">
+                            <div>rETH</div>
+                        </div>
+                        <div class="vaultMid">
+                            <div>
+                                <div>Total Value Locked</div>
+                                <div>$373,851.899</div>
+                            </div>
+                            <div>
+                                <div>Minted eUSD</div>
+                                <div>153,849.924</div>
+                            </div>
+                            <div>
+                                <div>APR</div>
+                                <div>18.12%</div>
+                            </div>
+                        </div>
+                        <div class="vaultBottom">
+                            <div class="deposit-btn">Deposit</div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div class="deposit screen">
+
+                <div class="deposit-inner">
+
+                    <div class="depositLeft">
+
+                        <div class="depositOptions">
+                            <div class="selected-option anOption">ETH</div>
+                            <div class="anOption">stETH</div>
+                            <div class="anOption">wstETH</div>
+                            <div class="anOption">WBETH</div>
+                            <div class="anOption">rETH</div>
+                        </div>
+
+                        <div class="depositBox">
+
+                            <div class="depositTop">
+                                <div>
+                                    <img src="img/vault0.svg">
+                                    <div>Deposit <span class="deposit-valuta">ETH</span></div>
+                                </div>
+
+                                <div>
+                                    <div>Deposit as</div>
+                                    <div class="dropdown-div">
+                                        <div class="selected-currency">stETH</div>
+                                        <img src="img/arr.svg">
+                                        <div class="dropdown-expansion">
+                                            <div class="dropdown-option">stETH</div>
+                                            <div class="dropdown-option">wstETH</div>
+                                            <div class="dropdown-option">WBETH</div>
+                                            <div class="dropdown-option">rETH</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="depositMid">
+                                <div>
+                                    <div>Available</div>
+                                    <div>
+                                        <span>0</span>
+                                        <span class="deposit-valuta">ETH</span>
+                                    </div>
+                                </div>
+
+                                <div class="deposit-input-div">
+                                    <input type="text" placeholder="0">
+                                    <div class="maxdiv">MAX</div>
+                                </div>
+                            </div>
+
+                            <div class="depositBottom">
+                                <div>Enter an amount</div>
+                            </div>
+
+                        </div>
+
+                        <div class="depositBox">
+
+                            <div class="depositTop">
+                                <div>
+                                    <svg width="81" height="80" viewBox="0 0 81 80" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_4222_9660)">
+                                            <rect x="0.681641" width="80" height="80" rx="40" fill="gray"></rect>
+                                            <path
+                                                d="M39.7177 14.6932C40.1762 14.0089 41.1825 14.0089 41.6409 14.6932L58.1634 39.3536C58.4246 39.7434 58.4246 40.2524 58.1634 40.6422L41.6409 65.3026C41.1825 65.9869 40.1762 65.9869 39.7177 65.3026L23.1952 40.6422C22.934 40.2523 22.934 39.7434 23.1952 39.3536L39.7177 14.6932ZM50.0642 48.0802C50.725 47.0939 49.6499 45.8708 48.587 46.3996L41.1949 50.0772C40.8702 50.2388 40.4885 50.2388 40.1637 50.0772L32.7716 46.3996C31.7087 45.8708 30.6336 47.0939 31.2944 48.0802L39.7177 60.6523C40.1762 61.3366 41.1824 61.3366 41.6409 60.6523L50.0642 48.0802ZM41.7113 22.7709C41.7113 22.2428 41.2832 21.8147 40.755 21.8147C40.2269 21.8147 39.7988 22.2428 39.7988 22.7709V23.12C39.7988 23.7282 39.3261 24.2242 38.7263 24.3252C37.5265 24.5274 36.5119 24.9272 35.6551 25.5383C34.1773 26.5565 33.4529 28.011 33.4529 29.931C33.4529 32.0569 34.4137 33.6721 36.3912 34.7767C36.4409 34.8045 36.4933 34.8281 36.5468 34.8477L39.0398 35.7618C39.4957 35.9289 39.7988 36.3629 39.7988 36.8485V41.5302C39.7988 42.2285 39.1682 42.7943 38.5302 42.5102C38.2139 42.3693 37.9413 42.1908 37.7125 41.9746C37.2136 41.4955 36.8771 40.7556 36.6908 39.7793C36.5774 39.185 36.0862 38.7164 35.4812 38.7164H34.4371C33.7647 38.7164 33.2268 39.2894 33.3379 39.9526C33.635 41.7247 34.2819 43.0872 35.2784 44.04C36.1245 44.8422 37.2754 45.3573 38.7314 45.601C39.3293 45.7011 39.7988 46.1963 39.7988 46.8025V47.331C39.7988 47.8592 40.2269 48.2873 40.755 48.2873C41.2832 48.2873 41.7113 47.8592 41.7113 47.331V46.8111C41.7113 46.2014 42.186 45.7035 42.7886 45.6108C44.0778 45.4124 45.1724 45.0149 46.0868 44.4182C47.6515 43.3709 48.4339 41.8291 48.4339 39.7637C48.4339 37.6401 47.4197 36.011 45.4203 34.8764C45.2667 34.7736 44.2763 34.3984 42.469 33.7306C42.0142 33.5625 41.7113 33.1289 41.7113 32.644V28.3564C41.7113 27.6622 42.3375 27.093 42.9688 27.3816C43.1452 27.4622 43.3055 27.5557 43.4499 27.6619C43.9412 28.0113 44.3023 28.5349 44.5333 29.243C44.712 29.7909 45.182 30.2219 45.7583 30.2219H46.731C47.4325 30.2219 47.9809 29.5998 47.8064 28.9203C47.4307 27.4571 46.7849 26.3542 45.855 25.6256C45.0592 24.9865 44.0316 24.5444 42.786 24.3274C42.1858 24.2228 41.7113 23.7268 41.7113 23.1175V22.7709ZM41.7113 37.0784C41.7113 36.9057 41.8757 36.7771 42.03 36.8546C44.0294 37.5528 45.0436 38.571 45.0436 39.8801C45.0436 40.84 44.6379 41.5964 43.8266 42.12C43.578 42.2822 43.3028 42.4177 43.0055 42.5287C42.3453 42.7751 41.7113 42.2166 41.7113 41.5119V37.0784ZM38.539 27.3244C39.1809 27.0658 39.7988 27.6292 39.7988 28.3213V31.0395C39.7988 31.8515 38.9726 32.4225 38.2844 31.9915C37.3236 31.3898 36.8432 30.703 36.8432 29.931C36.8432 28.8547 37.2199 28.0692 38.0023 27.6038C38.159 27.4988 38.3384 27.4053 38.539 27.3244Z"
+                                                fill="white"></path>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_4222_9660">
+                                                <rect x="0.681641" width="80" height="80" rx="40" fill="white"></rect>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <div>Mint <span class="epe">eUSD</span></div>
+                                </div>
+
+                            </div>
+
+                            <div class="depositMid">
+                                <div>
+                                    <div>Max</div>
+                                    <div>
+                                        <span>0</span>
+                                        <span class="epe">eUSD</span>
+                                    </div>
+                                </div>
+
+                                <div class="deposit-input-div">
+                                    <input type="text" placeholder="0">
+                                    <div class="maxdiv">MAX</div>
+                                </div>
+                            </div>
+
+                            <div class="depositBottom">
+                                <div>Enter an amount</div>
+                            </div>
+
+                        </div>
+
+                        <div class="description">To mint eUSD, you are required to deposit a specific amount of ETH
+                            (authorizing protocol to convert ETH to stETH) or Rebase LST as collateral. You can then
+                            mint
+                            eUSD against your collateral up to a minimum collateral ratio of 160%.</div>
+
+                    </div>
+
+                    <div class="depositRight">
+                        <div class="infoBox1">
+                            <div>OVERVIEW</div>
+                            <div>
+                                <div>Cap</div>
+                                <div class="cap">115.426M / 10B</div>
+                            </div>
+                            <div>
+                                <div>Collateral Deposited</div>
+                                <div>$0</div>
+                            </div>
+                            <div>
+                                <div><span class="epe">eUSD</span> Minted / <span class="epe">eUSD</span> Debt</div>
+                                <div>0</div>
+                            </div>
+                            <div>
+                                <div>Collateral Ratio</div>
+                                <div>∞</div>
+                            </div>
+                            <div>
+                                <div>Liquidation Price</div>
+                                <div>$0</div>
+                            </div>
+                            <div>
+                                <div>Available to Mint</div>
+                                <div>0 <span class="epe">eUSD</span></div>
+                            </div>
+                        </div>
+
+
+                        <div class="infoBox2">
+                            <div>
+                                <div>Collateral Ratio</div>
+                                <div>∞</div>
+                            </div>
+                            <div>
+                                <div>Liquidation Threshold</div>
+                                <div>
+                                    &lt; 150%</div>
+                            </div>
+                            <div>
+                                <div>Tx cost</div>
+                                <div>$26.18</div>
+                            </div>
+                            <div>
+                                <div><span class="deposit-valuta">ETH</span> Price</div>
+                                <div>$2,076.39</div>
+                            </div>
+                            <div>
+                                <div>Route</div>
+                                <div class="pool">ETH &gt; Lido &gt; Lybra Mint Pool</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="withdraw screen">
+
+                <div class="withdraw-inner">
+
+                    <div class="depositLeft">
+
+                        <div class="depositOptions">
+                            <div class="anOption" style="opacity: 0.8; pointer-events: none; color: lightgray;">ETH
+                            </div>
+                            <div class="selected-option anOption">stETH</div>
+                            <div class="anOption">wstETH</div>
+                            <div class="anOption">WBETH</div>
+                            <div class="anOption">rETH</div>
+                        </div>
+
+                        <div class="depositBox">
+
+                            <div class="depositTop">
+                                <div>
+                                    <img src="img/vault1.svg">
+                                    <div>Withdraw <span class="deposit-valuta">stETH</span></div>
+                                </div>
+
+                            </div>
+
+                            <div class="depositMid">
+                                <div>
+                                    <div>Max</div>
+                                    <div>
+                                        <span>0</span>
+                                        <span class="deposit-valuta">stETH</span>
+                                    </div>
+                                </div>
+
+                                <div class="deposit-input-div">
+                                    <input type="text" placeholder="0">
+                                    <div class="maxdiv">MAX</div>
+                                </div>
+                            </div>
+
+                            <div class="depositBottom">
+                                <div>Enter an amount</div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="description">When you withdraw your collateral, you receive the LST you originally
+                            deposited, which will reduce your exposure to price changes. However, it's important to note
+                            that this action can lead to a decrease in your collateral ratio and potentially expose you
+                            to
+                            the risk of liquidation if the value of ETH dips below a specified limit. To prevent any
+                            loss of
+                            funds, it's crucial to consistently keep an eye on your loan and maintain a secure
+                            collateral
+                            ratio.</div>
+
+                    </div>
+
+                    <div class="depositRight">
+                        <div class="infoBox1">
+                            <div>OVERVIEW</div>
+                            <div>
+                                <div>Collateral Deposited</div>
+                                <div>$0</div>
+                            </div>
+                            <div>
+                                <div>eUSD Minted / eUSD Debt</div>
+                                <div>0</div>
+                            </div>
+                            <div>
+                                <div>Collateral Ratio</div>
+                                <div>∞</div>
+                            </div>
+                            <div>
+                                <div>Liquidation Price</div>
+                                <div>$0</div>
+                            </div>
+                            <div>
+                                <div>Available to Mint</div>
+                                <div>0.0000 stETH</div>
+                            </div>
+                        </div>
+
+
+                        <div class="infoBox2">
+                            <div>
+                                <div>Collateral Ratio</div>
+                                <div>∞</div>
+                            </div>
+                            <div>
+                                <div>Liquidation Threshold</div>
+                                <div>
+                                    &lt; 150%</div>
+                            </div>
+                            <div>
+                                <div>Tx cost</div>
+                                <div>$15.13</div>
+                            </div>
+                            <div>
+                                <div><span class="deposit-valuta">stETH</span> Price</div>
+                                <div>$2,064.624</div>
+                            </div>
+                            <div>
+                                <div>Route</div>
+                                <div>Lybra Mint Pool</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="repay screen">
+
+                <div class="repay-inner">
+                    <div class="depositLeft">
+
+                        <div class="depositOptions">
+                            <div class="anOption" style="opacity: 0.8; pointer-events: none; color: lightgray;">ETH
+                            </div>
+                            <div class="selected-option anOption">stETH</div>
+                            <div class="anOption">wstETH</div>
+                            <div class="anOption">WBETH</div>
+                            <div class="anOption">rETH</div>
+                        </div>
+
+                        <div class="depositBox">
+
+                            <div class="depositTop">
+                                <div>
+                                    <img src="img/vault-1.svg">
+                                    <div>Repay <span class="deposit-valuta">eUSD</span></div>
+                                </div>
+
+                            </div>
+
+                            <div class="depositMid">
+                                <div>
+                                    <div>Max</div>
+                                    <div>
+                                        <span>0</span>
+                                        <span class="deposit-valuta">eUSD</span>
+                                    </div>
+                                </div>
+
+                                <div class="deposit-input-div">
+                                    <input type="text" placeholder="0">
+                                    <div class="maxdiv">MAX</div>
+                                </div>
+                            </div>
+
+                            <div class="depositBottom">
+                                <div>Enter an amount</div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="description">
+                            Repay your eUSD/peUSD debt to increase your Collateral Ratio and reduce
+                            your exposure to the risk of liquidation. However, you won't be able to continue earning
+                            yield
+                            from this part of the eUSD once you pay it back.
+                        </div>
+
+                    </div>
+
+                    <div class="depositRight">
+                        <div class="infoBox1">
+                            <div>OVERVIEW</div>
+                            <div>
+                                <div>Collateral Deposited</div>
+                                <div>$0</div>
+                            </div>
+                            <div>
+                                <div><span class="deposit-valuta">eUSD</span> Minted / <span
+                                        class="deposit-valuta">eUSD</span> Debt</div>
+                                <div>0</div>
+                            </div>
+                            <div>
+                                <div><span class="deposit-valuta">eUSD</span> balance</div>
+                                <div>0</div>
+                            </div>
+                            <div>
+                                <div>Collateral Ratio</div>
+                                <div>∞</div>
+                            </div>
+                            <div>
+                                <div>Liquidation Price</div>
+                                <div>$0</div>
+                            </div>
+                            <div>
+                                <div>Available to Repay</div>
+                                <div>0 <span class="deposit-valuta">eUSD</span></div>
+                            </div>
+                        </div>
+
+
+                        <div class="infoBox2">
+                            <div>
+                                <div>Collateral Ratio</div>
+                                <div>∞</div>
+                            </div>
+                            <div>
+                                <div>Liquidation Threshold</div>
+                                <div>
+                                    &lt; 150%</div>
+                            </div>
+                            <div>
+                                <div>Tx cost</div>
+                                <div>$8.29</div>
+                            </div>
+                            <div>
+                                <div><span class="crypt">stETH</span> Price</div>
+                                <div>$2,064.624</div>
+                            </div>
+                            <div>
+                                <div>Route</div>
+                                <div>Lybra Mint Pool</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="redeem screen">
+
+                <div class="redeem-inner">
+                    <div class="depositLeft">
+
+                        <div class="depositOptions">
+                            <div class="anOption" style="opacity: 0.8; pointer-events: none; color: lightgray;">ETH
+                            </div>
+                            <div class="selected-option anOption">stETH</div>
+                            <div class="anOption">wstETH</div>
+                            <div class="anOption">WBETH</div>
+                            <div class="anOption">rETH</div>
+                        </div>
+
+                        <div class="depositBox">
+
+                            <div class="depositTop">
+                                <div>
+                                    <img src="img/vault-1.svg">
+                                    <div>Rigid Redemption</div>
+                                </div>
+
+                            </div>
+
+                            <div class="depositMid">
+                                <div>
+                                    <div>Max</div>
+                                    <div>
+                                        <span>0</span>
+                                        <span class="deposit-valuta">eUSD</span>
+                                    </div>
+                                </div>
+
+                                <div class="deposit-input-div">
+                                    <input type="text" placeholder="0">
+                                    <div class="maxdiv">MAX</div>
+                                </div>
+
+                                <div>You will receive 0/0 <span class="theCurr">stETH</span> from Redemption Providers
+                                </div>
+                            </div>
+
+                            <div class="depositBottom">
+                                <div>Enter an amount</div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="description">
+                            At some point, you may consider exchanging your eUSD for stETH. The Lybra Protocol's Rigid
+                            Redemption Mechanism ensures a consistent 1:1 exchange rate between eUSD and LST.
+                        </div>
+
+
+                        <div class="depositBox theBox">
+
+                            <div class="depositTop">
+                                <div>
+                                    <img src="img/vault-1.svg">
+                                    <div>Rebase Redemption</div>
+                                </div>
+
+                            </div>
+
+                            <div class="depositMid">
+                                <div>
+                                    <div>Max</div>
+                                    <div>
+                                        <span>0</span>
+                                        <span class="deposit-valuta">eUSD</span>
+                                    </div>
+                                </div>
+
+                                <div class="deposit-input-div">
+                                    <input type="text" placeholder="0">
+                                    <div class="maxdiv">MAX</div>
+                                </div>
+
+                                <div>You will receive 0/0 stETH from Redemption Providers</div>
+                                <div>Current discount 28%</div>
+                            </div>
+
+                            <div class="depositBottom">
+                                <div>Enter an amount</div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="description theDesc">
+                            Users can redeem their eUSD for stETH's rebase rewards in the protocol. The eUSD used for
+                            redemption will be used to trigger an eUSD rebase. The redemption is conducted in a Dutch
+                            Auction, offering a 1% discount every 30 minutes, capped at 47%.
+                        </div>
+
+                    </div>
+
+                    <div class="depositRight">
+                        <div class="infoBox1">
+                            <div>OVERVIEW</div>
+                            <div>
+                                <div>Collateral Deposited</div>
+                                <div>$0</div>
+                            </div>
+                            <div>
+                                <div><span class="deposit-valuta">eUSD</span> Minted / <span
+                                        class="deposit-valuta">eUSD</span> Debt</div>
+                                <div>0</div>
+                            </div>
+                            <div>
+                                <div><span class="deposit-valuta">eUSD</span> balance</div>
+                                <div>0</div>
+                            </div>
+                            <div>
+                                <div>Collateral Ratio</div>
+                                <div>∞</div>
+                            </div>
+                            <div>
+                                <div>Available to Redeem</div>
+                                <div>0 <span class="deposit-valuta">eUSD</span></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="omnichain screen">
+
+                <div class="omniCont">
+
+                    <div class="omniLeft">
+
+                        <div class="omniBox">
+
+                            <div class="firstOmni">
+                                <div class="one">
+                                    <div>From</div>
+                                    <div class="leftOmniDropdownDiv">
+                                        <div>
+                                            <img class="foi" src="img/vault-1.svg">
+                                            <div class="fotd">eUSD</div>
+                                        </div>
+
+                                        <img src="img/downarrow.svg">
+
+                                        <div class="leftExpansion">
+                                            <div>
+                                                <img src="img/vault-1.svg">
+                                                <div>eUSD</div>
+                                            </div>
+                                            <div>
+                                                <img src="img/vault-2.svg">
+                                                <div>peUSD</div>
+                                            </div>
+                                            <div>
+                                                <img src="img/logo.png">
+                                                <div>LBR</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="two">
+                                    <div>Network</div>
+                                    <div class="rightOmniDropdownDiv">
+                                        <div>
+                                            <img src="img/vault0.svg">
+                                            <div class="soi">ETH</div>
+                                        </div>
+
+                                        <img src="img/downarrow.svg">
+
+                                        <div class="rightExpansion">
+                                            <div>
+                                                <img src="img/vault0.svg">
+                                                <div>ETH</div>
+                                            </div>
+                                            <div>
+                                                <img src="img/arb.svg">
+                                                <div>ARB</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="firstOmni">
+                                <div class="one">
+                                    <div>From</div>
+                                    <div class="leftOmniDropdownDiv">
+                                        <div>
+                                            <img class="foi" src="img/vault-1.svg">
+                                            <div class="fotd">eUSD</div>
+                                        </div>
+
+                                        <img src="img/downarrow.svg">
+
+                                        <div class="leftExpansion">
+                                            <div>
+                                                <img src="img/vault-1.svg">
+                                                <div>eUSD</div>
+                                            </div>
+                                            <div>
+                                                <img src="img/vault-2.svg">
+                                                <div>peUSD</div>
+                                            </div>
+                                            <div>
+                                                <img src="img/logo.png">
+                                                <div>LBR</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="two">
+                                    <div>Network</div>
+                                    <div class="rightOmniDropdownDiv">
+                                        <div>
+                                            <img src="img/vault0.svg">
+                                            <div class="soi">ETH</div>
+                                        </div>
+
+                                        <img src="img/downarrow.svg">
+
+                                        <div class="rightExpansion">
+                                            <div>
+                                                <img src="img/vault0.svg">
+                                                <div>ETH</div>
+                                            </div>
+                                            <div>
+                                                <img src="img/arb.svg">
+                                                <div>ARB</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="secondOmni">
+
+                                <div>
+                                    <div>Balance</div>
+
+                                    <div>0 eUSD</div>
+                                </div>
+
+                                <div class="omniInputDiv">
+                                    <input type="text" placeholder="0">
+                                    <div class="maxdiv">MAX</div>
+                                </div>
+
+                            </div>
+
+                            <div class="secondOmni">
+
+                                <div>
+                                    <div>You will receive</div>
+
+                                    <div>0 peUSD</div>
+                                </div>
+
+                                <div class="omniBtnDiv">
+                                    <div class="omniBtn">
+                                        Enter an amount
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="depositRight">
+                        <div class="infoBox1">
+                            <div>OVERVIEW</div>
+                            <div>
+                                <div>Collateral Deposited</div>
+                                <div>$0</div>
+                            </div>
+                            <div>
+                                <div><span class="deposit-valuta">eUSD</span> Minted / <span
+                                        class="deposit-valuta">eUSD</span> Debt</div>
+                                <div>0</div>
+                            </div>
+                            <div>
+                                <div><span class="deposit-valuta">eUSD</span> balance</div>
+                                <div>0</div>
+                            </div>
+                            <div>
+                                <div>Collateral Ratio</div>
+                                <div>∞</div>
+                            </div>
+                            <div>
+                                <div>Liquidation Price</div>
+                                <div>$0</div>
+                            </div>
+                            <div>
+                                <div>Available to Repay</div>
+                                <div>0 <span class="deposit-valuta">eUSD</span></div>
+                            </div>
+                        </div>
+
+
+                        <div class="infoBox2">
+                            <div>
+                                <div>Collateral Ratio</div>
+                                <div>∞</div>
+                            </div>
+                            <div>
+                                <div>Liquidation Threshold</div>
+                                <div>
+                                    &lt; 150%</div>
+                            </div>
+                            <div>
+                                <div>Tx cost</div>
+                                <div>$8.29</div>
+                            </div>
+                            <div>
+                                <div><span class="deposit-valuta">stETH</span> Price</div>
+                                <div>$2,064.624</div>
+                            </div>
+                            <div>
+                                <div>Route</div>
+                                <div>Lybra Mint Pool</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="boost screen">
+                <div class="boost-inner">
+
+                    <div class="depositLeft">
+
+                        <div class="boostBox">
+
+                            <div class="boostTop">
+                                <img src="img/logo.png">
+                                <div>Boost</div>
+                            </div>
+
+                            <div class="boostMid">
+
+                                <div>
+                                    <div>
+                                        <div>LBR</div>
+                                        <label>
+                                            <input type="checkbox" style="display: none;">
+                                            <div class="switch-container">
+                                                <div class="switch-circle"></div>
+                                            </div>
+                                        </label>
+                                        <div>esLBR</div>
+                                    </div>
+
+                                    <div>Available 0 <span class="es">LBR</span></div>
+                                </div>
+
+                                <div class="boost-input-div">
+                                    <img src="img/logo.png">
+                                    <input type="text" placeholder="0">
+                                    <div class="maxdiv">MAX</div>
+                                </div>
+
+                                <div>
+                                    <div>Lock Duration</div>
+
+                                    <div class="boost-dropdown">
+                                        <div class="sellec">6 Months</div>
+                                        <img src="img/boostarr.svg">
+                                        <div class="dropdown-expansion">
+                                            <div>1 Month</div>
+                                            <div>3 Month</div>
+                                            <div>6 Month</div>
+                                            <div>12 Month</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div>Multiplier</div>
+
+                                    <div>Up to 1.25x</div>
+                                </div>
+
+                                <div>
+                                    <div>Lockable Threshold</div>
+
+                                    <div>0</div>
+                                </div>
+
+                                <div>
+                                    <div>Maturity Date</div>
+
+                                    <div>NA</div>
+                                </div>
+
+                                <div>
+                                    <div>Locked esLBR</div>
+
+                                    <div>0</div>
+                                </div>
+
+                                <div>
+                                    <div>Boost</div>
+
+                                    <div>0.00x</div>
+                                </div>
+
+                            </div>
+
+                            <div class="boostBottom">
+                                <div>Enter an amount</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="depositRight">
+                        <div class="description">
+                            <strong>eUSD and peUSD minters can boost their esLBR emission from the mint pool by up to
+                                1.5x
+                                by
+                                locking LBR or esLBR for a specific duration. Here are the rules:</strong>
+                            <br>
+                            1. Boost = (LBR or esLBR Locked) / esLBR lockable threshold * time weight.
+                            <br>
+                            2. esLBR lockable threshold = your loan value in USD / overall loan value in USD * total
+                            circulation of esLBR.
+                            <br>
+                            3. Once you choose a lock period, you can only extend it, not decrease it. If you re-lock
+                            your
+                            esLBR during the lock period, the period will start again.
+                            <br>
+                            4. You can choose to lock your esLBR beyond the esLBR Lockable Threshold, but your minimum
+                            boost
+                            will still be based on the esLBR lockable threshold.
+                            <br>
+                            5. Your esLBR will still receive protocol revenue while being locked in Boost.
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="earn screen">
+
+                <div class="earn-inner">
+
+                    <div class="earn-btn">Switch To Arb</div>
+
+
+                    <div class="earn-grid">
+
+                        <div class="boostBox">
+
+                            <div class="boostTop">
+                                <img src="img/vault-1.svg">
+                                <div>Mint Pool</div>
+                            </div>
+
+                            <div class="boostMid">
+
+                                <div>
+                                    <div>Your Mint Value</div>
+
+                                    <div>$0</div>
+                                </div>
+
+                                <div>
+                                    <div>Total Mint Value</div>
+
+                                    <div>$158,751,077.43</div>
+                                </div>
+
+                                <div>
+                                    <div>APR</div>
+
+                                    <div>16.17%</div>
+                                </div>
+
+                                <div>
+                                    <div>Reward Eligibility</div>
+
+                                    <div style="color: red;">Not Eligible</div>
+                                </div>
+
+                                <div>
+                                    <div>Rewards</div>
+
+                                    <div>0 esLBR</div>
+                                </div>
+
+                            </div>
+
+                            <div class="boostMid earnMid">
+
+                                <div>
+                                    <div>
+                                        <span>Redemption Provider Boost</span>
+                                        <span>
+                                            <label>
+                                                <input type="checkbox" style="display: none;">
+                                                <div class="switch-container">
+                                                    <div class="switch-circle"></div>
+                                                </div>
+                                            </label>
+                                        </span>
+                                    </div>
+
+                                    <div>None</div>
+                                </div>
+
+                                <div>
+                                    <div>Boost Status</div>
+                                    <div>None</div>
+                                </div>
+
+                            </div>
+
+                            <div class="boostBottom earnBottom">
+                                <div>Provide dLP</div>
+
+                                <div>Claim esLBR</div>
+                            </div>
+
+                        </div>
+
+                        <div class="boostBox">
+
+                            <div class="boostTop earnTop">
+                                <div>
+                                    <img src="img/logo.png">
+                                    <div>Stake LBR</div>
+                                </div>
+
+                                <div class="clickable">
+                                    <img src="img/bluplus.svg">
+                                    <div>Buy LBR</div>
+                                </div>
+
+                            </div>
+
+                            <div class="boostMid">
+
+                                <div>
+                                    <div>esLBR Balance</div>
+
+                                    <div>0 esLBR</div>
+                                </div>
+
+                                <div>
+                                    <div>Total esLBR</div>
+
+                                    <div>8,099,811.48 esLBR</div>
+                                </div>
+
+                                <div>
+                                    <div>Protocol Generated Revenue</div>
+
+                                    <div>$373,106.71</div>
+                                </div>
+
+                                <div>
+                                    <div>APR</div>
+
+                                    <div>23.61%</div>
+                                </div>
+
+                                <div>
+                                    <div>Rewards</div>
+
+                                    <div>$0 peUSD or USDC/div>
+                                    </div>
+
+                                </div>
+
+
+
+                            </div>
+
+                            <div class="boostBottom earnBottom">
+                                <div>Stake</div>
+
+                                <div>Claim Rewards</div>
+                            </div>
+
+
+
+                        </div>
+                        <div class="boostBox">
+
+                            <div class="boostTop earnTop">
+                                <div>
+                                    <img src="img/double1.svg">
+                                    <div>LBR/ETH LP</div>
+                                </div>
+
+                                <div class="clickable">
+                                    <img src="img/bluplus.svg">
+                                    <div>Provide</div>
+                                </div>
+                            </div>
+
+                            <div class="boostMid">
+
+                                <div>
+                                    <div>LBR/ETH LP Staked</div>
+
+                                    <div>0 LBR/ETH LP ($0)</div>
+                                </div>
+
+                                <div>
+                                    <div>Total LBR/ETH LP Staked</div>
+
+                                    <div>$10,207,933</div>
+                                </div>
+
+                                <div>
+                                    <div>APR</div>
+
+                                    <div>49.79%</div>
+                                </div>
+
+                                <div>
+                                    <div>Rewards</div>
+
+                                    <div>0 esLBR</div>
+                                </div>
+
+                            </div>
+
+                            <div class="boostBottom earnBottom thisEarnBottom">
+                                <div>
+                                    <div>Stake</div>
+                                    <div>Unstake</div>
+                                </div>
+
+                                <div>Claim esLBR</div>
+                            </div>
+
+                        </div>
+
+                        <div class="boostBox">
+
+                            <div class="boostTop earnTop">
+                                <div>
+                                    <img src="img/double2.svg">
+                                    <div>eUSD/3CRV LP</div>
+                                </div>
+
+                                <div class="clickable">
+                                    <img src="img/bluplus.svg">
+                                    <div>Provide</div>
+                                </div>
+                            </div>
+
+                            <div class="boostMid">
+
+                                <div>
+                                    <div>eUSD/3CRV LP Staked</div>
+
+                                    <div>0 eUSD/3CRV LP</div>
+                                </div>
+
+                                <div>
+                                    <div>Total eUSD/3CRV LP Staked</div>
+
+                                    <div>$23,836,984.99</div>
+                                </div>
+
+                                <div>
+                                    <div>APR</div>
+
+                                    <div>10.66%</div>
+                                </div>
+
+                                <div>
+                                    <div>Rewards</div>
+
+                                    <div>0 esLBR</div>
+                                </div>
+
+                            </div>
+
+                            <div class="boostBottom earnBottom thisEarnBottom">
+                                <div>
+                                    <div>Stake</div>
+                                    <div>Unstake</div>
+                                </div>
+
+                                <div>Claim esLBR</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="vest screen">
+
+                <div class="boostBox">
+
+                    <div class="boostTop earnTop">
+                        <div>
+                            <img src="img/logo.png">
+                            <div>Stake LBR</div>
+                        </div>
+
+                        <div class="clickable">
+                            <img src="img/bluplus.svg">
+                            <div>Buy LBR</div>
+                        </div>
+
+                    </div>
+
+                    <div class="boostMid">
+
+                        <div class="description">
+                            esLBR holders can convert their esLBR to LBR through a vesting process. Once the process is
+                            started, esLBR will be linearly converted to LBR over a period of 90 days, a penalty fee
+                            ranging from 95% to 25% will be charged where users decide to advance (or speed up) the
+                            vesting period.
+                        </div>
+
+                        <div>
+                            <div>Staked Tokens</div>
+
+                            <div>0 esLBR</div>
+                        </div>
+
+                        <div>
+                            <div>Reserved for Vesting</div>
+
+                            <div>0 LBR</div>
+                        </div>
+
+                        <div>
+                            <div>Fully Vested Time</div>
+
+                            <div>NA</div>
+                        </div>
+
+                        <div>
+                            <div>Claimable</div>
+
+                            <div>0 LBR</div>
+                        </div>
+
+                        <div>
+                            <div>Rewards</div>
+
+                            <div>$0 peUSD or USDC/div>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="boostBottom earnBottom">
+                        <div id="thisone"
+                            style="color: #a3a3a3; background-color: white; border: 0.5px solid hsla(0,0%,64%,.302);">
+                            Vest</div>
+
+                        <div>Claim Rewards</div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+            <div class="bounty screen">
+
+                <div class="redeem-inner">
+
+                    <div class="bountyBox1">
+
+                        <div class="bountyTop1">
+
+                            <div>
+                                <img src="img/logo.png">
+                                <div>dLP Bounty</div>
+                            </div>
+
+                            <div>
+                                <div>
+                                    <div>LBR</div>
+                                    <label>
+                                        <input type="checkbox" style="display: none;">
+                                        <div class="switch-container">
+                                            <div class="switch-circle"></div>
+                                        </div>
+                                    </label>
+                                    <div>eUSD</div>
+                                </div>
+
+                                <div>Available 0 <span class="es">LBR</span></div>
+                            </div>
+
+                        </div>
+
+                        <div class="bountyMid1">
+
+                            <div class="firstOne">
+                                <div></div>
+                                <div>Adress</div>
+                                <div>Bounty</div>
+                            </div>
+
+                            <div class="secondOne">
+                                <div class="firstOne">
+                                    <div>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div>0x15..4bbc</div>
+                                    <div>
+                                        <img src="img/logo.png">
+                                        <span>33.4298 esLBR</span>
+                                    </div>
+                                </div>
+
+                                <div class="firstOne">
+                                    <div>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div>0x15..4bbc</div>
+                                    <div>
+                                        <img src="img/logo.png">
+                                        <span>33.4298 esLBR</span>
+                                    </div>
+                                </div>
+
+                                <div class="firstOne">
+                                    <div>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div>0x15..4bbc</div>
+                                    <div>
+                                        <img src="img/logo.png">
+                                        <span>33.4298 esLBR</span>
+                                    </div>
+                                </div>
+
+                                <div class="firstOne">
+                                    <div>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div>0x15..4bbc</div>
+                                    <div>
+                                        <img src="img/logo.png">
+                                        <span>33.4298 esLBR</span>
+                                    </div>
+                                </div>
+
+                                <div class="firstOne">
+                                    <div>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div>0x15..4bbc</div>
+                                    <div>
+                                        <img src="img/logo.png">
+                                        <span>33.4298 esLBR</span>
+                                    </div>
+                                </div>
+
+                                <div class="firstOne">
+                                    <div>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div>0x15..4bbc</div>
+                                    <div>
+                                        <img src="img/logo.png">
+                                        <span>33.4298 esLBR</span>
+                                    </div>
+                                </div>
+
+                                <div class="firstOne">
+                                    <div>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div>0x15..4bbc</div>
+                                    <div>
+                                        <img src="img/logo.png">
+                                        <span>33.4298 esLBR</span>
+                                    </div>
+                                </div>
+
+                                <div class="firstOne">
+                                    <div>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div>0x15..4bbc</div>
+                                    <div>
+                                        <img src="img/logo.png">
+                                        <span>33.4298 esLBR</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="thirdOne">
+                                Total cost: <span>0</span> LBR <span>(Gas fee: $0)</span>
+                            </div>
+
+                        </div>
+
+                        <div class="bountyBottom1">
+                            <div>Buy</div>
+                        </div>
+
+                    </div>
+
+                    <div class="bountyBox1 bountyBox2">
+
+                        <div class="bountyTop1">
+
+                            <div>
+                                <img src="img/logo.png">
+                                <div>Vesting Penalty</div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="bountyMid1">
+
+                            <div class="firstOne">
+                                All esLBR from the advanced vesyinh penalty is shown below. They can be purchased by any
+                                user with LBR or eUSD at a 40% discount. The LBR paid will be subsequently burnt.
+                            </div>
+
+
+
+                            <div class="thirdOne">
+                                <img src="img/logo.png">
+                                <div>0 esLBR</div>
+                            </div>
+
+                        </div>
+
+                        <div class="bountyBottom1">
+                            <div>Buy</div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+    </section>
+
+    <footer>
+
+        <div class="container footer-container">
+
+            <div class="leftFooter">
+                <a>
+                    <img src="img/whitelogo.svg">
+
+                    <div>Lybra Finance</div>
+                </a>
+
+                <a>Home</a>
+                <a href="eusd.html">eUSD</a>
+                <a href="peusd.html">peUSD</a>
+                <a href="https://docs.lybra.finance/lybra-finance-docs-v2/background/introduction"
+                    target="_blank">Docs</a>
+                <div class="governance">
+                    <div>
+                        <div>Governance</div>
+                        <img src="img/whitearrow.svg">
+                    </div>
+                    <div class="governance-expansion">
+                        <a href="https://forum.lybra.finance/" target="_blank">Forum</a>
+                        <a href="https://snapshot.org/#/lybralabs.eth" target="_blank">Snapshot</a>
+                        <a href="https://www.tally.xyz/gov/lybra-dao" target="_blank">Tally</a>
+                    </div>
+                </div>
+                <a target="_blank"
+                    href="https://docs.lybra.finance/lybra-finance-technical-whitepaper-v2/overview/the-lybra-v2-smart-contracts">Whitepaper</a>
+                <a href="v1.html">Lybra V1</a>
+                <a target="_blank"
+                    href="https://docs.lybra.finance/lybra-finance-docs-v2/supplement/audits-and-bug-bounty"></a>
+            </div>
+
+            <div class="rightFooter">
+
+                <a>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_3999_11136)">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12 0C5.3724 0 0 5.3808 0 12.0204C0 17.3304 3.438 21.8364 8.2068 23.4252C8.8068 23.5356 9.0252 23.1648 9.0252 22.8456C9.0252 22.5612 9.0156 21.804 9.0096 20.802C5.6712 21.528 4.9668 19.1904 4.9668 19.1904C4.422 17.8008 3.6348 17.4312 3.6348 17.4312C2.5452 16.6872 3.7176 16.7016 3.7176 16.7016C4.9212 16.7856 5.5548 17.94 5.5548 17.94C6.6252 19.776 8.364 19.2456 9.0468 18.9384C9.1572 18.162 9.4668 17.6328 9.81 17.3328C7.146 17.0292 4.344 15.9972 4.344 11.3916C4.344 10.08 4.812 9.006 5.5788 8.166C5.4552 7.8624 5.0436 6.6396 5.6964 4.986C5.6964 4.986 6.7044 4.662 8.9964 6.2172C9.97532 5.95022 10.9853 5.81423 12 5.8128C13.02 5.8176 14.046 5.9508 15.0048 6.2172C17.2956 4.662 18.3012 4.9848 18.3012 4.9848C18.9564 6.6396 18.5436 7.8624 18.4212 8.166C19.1892 9.006 19.6548 10.08 19.6548 11.3916C19.6548 16.0092 16.848 17.0256 14.1756 17.3232C14.6064 17.694 14.9892 18.4272 14.9892 19.5492C14.9892 21.1548 14.9748 22.452 14.9748 22.8456C14.9748 23.1672 15.1908 23.5416 15.8004 23.424C18.19 22.6225 20.2672 21.0904 21.7386 19.0441C23.2099 16.9977 24.001 14.5408 24 12.0204C24 5.3808 18.6264 0 12 0Z"
+                                fill="#A3A3A3" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_3999_11136">
+                                <rect width="24" height="24" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+                <a>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7.55016 21.75C16.6045 21.75 21.5583 14.2468 21.5583 7.74192C21.5583 7.53098 21.5536 7.31536 21.5442 7.10442C22.5079 6.40752 23.3395 5.54432 24 4.55536C23.1025 4.95466 22.1496 5.21544 21.1739 5.3288C22.2013 4.71297 22.9705 3.74553 23.3391 2.60583C22.3726 3.17862 21.3156 3.58267 20.2134 3.80067C19.4708 3.01162 18.489 2.48918 17.4197 2.31411C16.3504 2.13905 15.2532 2.32111 14.2977 2.83216C13.3423 3.3432 12.5818 4.15477 12.1338 5.14137C11.6859 6.12798 11.5754 7.23468 11.8195 8.29036C9.86249 8.19215 7.94794 7.68377 6.19998 6.79816C4.45203 5.91255 2.90969 4.6695 1.67297 3.14958C1.0444 4.2333 0.852057 5.51571 1.13503 6.73615C1.418 7.9566 2.15506 9.02351 3.19641 9.72005C2.41463 9.69523 1.64998 9.48474 0.965625 9.10598V9.16692C0.964925 10.3042 1.3581 11.4066 2.07831 12.2868C2.79852 13.167 3.80132 13.7706 4.91625 13.995C4.19206 14.1932 3.43198 14.2221 2.69484 14.0794C3.00945 15.0575 3.62157 15.913 4.44577 16.5264C5.26997 17.1398 6.26512 17.4807 7.29234 17.5013C5.54842 18.8712 3.39417 19.6142 1.17656 19.6107C0.783287 19.6101 0.390399 19.586 0 19.5385C2.25286 20.9838 4.87353 21.7514 7.55016 21.75Z"
+                            fill="#A3A3A3" />
+                    </svg>
+                </a>
+                <a>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.88806 10.068C9.20406 10.068 8.66406 10.668 8.66406 11.4C8.66406 12.132 9.21606 12.732 9.88806 12.732C10.5721 12.732 11.1121 12.132 11.1121 11.4C11.1241 10.668 10.5721 10.068 9.88806 10.068ZM14.2681 10.068C13.5841 10.068 13.0441 10.668 13.0441 11.4C13.0441 12.132 13.5961 12.732 14.2681 12.732C14.9521 12.732 15.4921 12.132 15.4921 11.4C15.4921 10.668 14.9521 10.068 14.2681 10.068Z"
+                            fill="#A3A3A3" />
+                        <path
+                            d="M20.1005 0H4.02055C2.66455 0 1.56055 1.104 1.56055 2.472V18.696C1.56055 20.064 2.66455 21.168 4.02055 21.168H17.6285L16.9925 18.948L18.5285 20.376L19.9805 21.72L22.5605 24V2.472C22.5605 1.104 21.4565 0 20.1005 0ZM15.4685 15.672C15.4685 15.672 15.0365 15.156 14.6765 14.7C16.2485 14.256 16.8485 13.272 16.8485 13.272C16.3565 13.596 15.8885 13.824 15.4685 13.98C14.8685 14.232 14.2925 14.4 13.7285 14.496C12.5765 14.712 11.5205 14.652 10.6205 14.484C9.93655 14.352 9.34855 14.16 8.85655 13.968C8.58055 13.86 8.28055 13.728 7.98055 13.56C7.94455 13.536 7.90855 13.524 7.87255 13.5C7.84855 13.488 7.83655 13.476 7.82455 13.464C7.60855 13.344 7.48855 13.26 7.48855 13.26C7.48855 13.26 8.06455 14.22 9.58855 14.676C9.22855 15.132 8.78455 15.672 8.78455 15.672C6.13255 15.588 5.12455 13.848 5.12455 13.848C5.12455 9.984 6.85255 6.852 6.85255 6.852C8.58055 5.556 10.2245 5.592 10.2245 5.592L10.3445 5.736C8.18455 6.36 7.18855 7.308 7.18855 7.308C7.18855 7.308 7.45255 7.164 7.89655 6.96C9.18055 6.396 10.2005 6.24 10.6205 6.204C10.6925 6.192 10.7525 6.18 10.8245 6.18C11.5565 6.084 12.3845 6.06 13.2485 6.156C14.3885 6.288 15.6125 6.624 16.8605 7.308C16.8605 7.308 15.9125 6.408 13.8725 5.784L14.0405 5.592C14.0405 5.592 15.6845 5.556 17.4125 6.852C17.4125 6.852 19.1405 9.984 19.1405 13.848C19.1405 13.848 18.1205 15.588 15.4685 15.672V15.672Z"
+                            fill="#A3A3A3" />
+                    </svg>
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="dashboard.js"></script>
+
+</body>
+
+</html>
